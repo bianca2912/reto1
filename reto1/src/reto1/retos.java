@@ -70,19 +70,53 @@ public class retos {
 			case 1: {
 				int resultado = funcion1.sumar(a, b);
 				System.out.println ("La suma entre: " + a + " + " + b + " es: " + resultado);
+				break;
 			}
 			case 2: {
 				int resultado = funcion1.restar(a, b);
 				System.out.println ("La resta  entre: " + a + " - " + b + " es: " + resultado);
+				break;
 			}
 			case 3: {
 				int resultado = funcion1.multiplicar(a, b);
 				System.out.println ("La multiplicación  entre: " + a + " x " + b + " es: " + resultado);
+				break;
 			}
 			case 4: {
 				double resultado = funcion1.dividir(a, b);
 				System.out.println("La división de " + a + " entre " + b + " es: " + resultado);
+				break;
+				}
+			case 5:{
+				boolean valida=funcion2.par(a);
+				System.out.println("El numero "+a+" es par? "+valida);
+				boolean validab=funcion2.par(b);
+				System.out.println("El numero "+b+" es par? "+validab);
+				break;
+				}
+			case 6:{
+				boolean valida=funcion2.impar(a);
+				System.out.println("El numero "+a+" es impar? "+valida);
+				boolean validab=funcion2.impar(b);
+				System.out.println("El numero "+b+" es impar? "+validab);
+				break;
 			}
+			case 7:{
+				boolean valida=funcion2.positivo(a);
+				System.out.println("El numero "+a+" es positivo? "+valida);
+				boolean validab=funcion2.positivo(b);
+				System.out.println("El numero "+b+" es positivo? "+validab);
+				break;
+			}
+			case 8:{
+				boolean valida=funcion2.negativo(a);
+				System.out.println("El numero "+a+" es negativo? "+valida);
+				boolean validab=funcion2.negativo(b);
+				System.out.println("El numero "+b+" es negativo? "+validab);
+				break;	
+			}
+			
+			
 			default:
 				break;
 			}
