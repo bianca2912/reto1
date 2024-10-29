@@ -14,7 +14,7 @@ public class retos {
 		boolean valido;
 		
 		do {
-			System.out.println("Elige la operaciÃ³n:");
+			System.out.println("Elige la operación:");
 			System.out.println("1. Sumar");
 			System.out.println("2. Restar");
 			System.out.println("3. Multiplicar");
@@ -30,18 +30,18 @@ public class retos {
 				if (menu >=0 && menu<=8) {
 					valido = true;
 				} else {
-					System.out.println("NÃºmero incorrecto.");
+					System.out.println("Número incorrecto.");
 					valido = false;
 				}
 			} catch (Exception e) {
 				// TODO: handle exception
-				System.out.println("NÃºmero no reconocido.");
+				System.out.println("Número no reconocido.");
 				valido = false;
 			}
 		} while (!valido);
 		
 		do {
-			System.out.println("Introduce el primer nÃºmero: ");
+			System.out.println("Introduce el primer número: ");
 			String input = scanner.nextLine();
 			try {
 				a = Integer.parseInt(input);
@@ -49,24 +49,28 @@ public class retos {
 				
 			} catch (Exception e) {
 				// TODO: handle exception
-				System.out.println("NÃºmero no reconocido.");
+				System.out.println("Número no reconocido.");
 				valido = false;
 			}
 		} while (!valido);
 		
 		do {
 			if(menu>=5 && menu<=8) {break;}
-			System.out.println("Introduce el segundo nÃºmero: ");
+			System.out.println("Introduce el segundo número: ");
 			String input = scanner.nextLine();
 			try {
 				b = Integer.parseInt(input);
 				valido = true;
 			} catch (Exception e) {
 				// TODO: handle exception
-				System.out.println("NÃºmero no reconocido.");
+				System.out.println("Número no reconocido.");
 				valido = false;
 			}
+		
 		} while (!valido);
+		scanner.close();
+		
+		
 		
 			switch (menu) {
 			case 1: {
@@ -81,12 +85,12 @@ public class retos {
 			}
 			case 3: {
 				int resultado = funcion1.multiplicar(a, b);
-				System.out.println ("La multiplicaciÃ³n  entre: " + a + " x " + b + " es: " + resultado);
+				System.out.println ("La multiplicación  entre: " + a + " x " + b + " es: " + resultado);
 				break;
 			}
 			case 4: {
 				double resultado = funcion1.dividir(a, b);
-				System.out.println("La divisiÃ³n de " + a + " entre " + b + " es: " + resultado);
+				System.out.println("La división de " + a + " entre " + b + " es: " + resultado);
 				break;
 				}
 			case 5:{
@@ -109,11 +113,12 @@ public class retos {
 				System.out.println("El numero "+a+" es negativo? "+valida);
 				break;	
 			}
-			
+		
 			
 			default:
 				break;
 			}
+			
 	}
 }
 
