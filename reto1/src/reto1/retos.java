@@ -79,6 +79,10 @@ public class retos {
 				int resultado = funcion1.multiplicar(a, b);
 				System.out.println ("La multiplicación  entre: " + a + " x " + b + " es: " + resultado);
 			}
+			case 4: {
+				double resultado = funcion1.dividir(a, b);
+				System.out.println("La división de " + a + " entre " + b + " es: " + resultado);
+			}
 			default:
 				break;
 			}
