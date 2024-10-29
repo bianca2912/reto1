@@ -46,6 +46,7 @@ public class retos {
 			try {
 				a = Integer.parseInt(input);
 				valido = true;
+				
 			} catch (Exception e) {
 				// TODO: handle exception
 				System.out.println("Número no reconocido.");
@@ -54,7 +55,8 @@ public class retos {
 		} while (!valido);
 		
 		do {
-			System.out.println("Introduce el primer número: ");
+			if(menu>=5 && menu<=8) {break;}
+			System.out.println("Introduce el segundo número: ");
 			String input = scanner.nextLine();
 			try {
 				b = Integer.parseInt(input);
@@ -90,29 +92,21 @@ public class retos {
 			case 5:{
 				boolean valida=funcion2.par(a);
 				System.out.println("El numero "+a+" es par? "+valida);
-				boolean validab=funcion2.par(b);
-				System.out.println("El numero "+b+" es par? "+validab);
 				break;
 				}
 			case 6:{
 				boolean valida=funcion2.impar(a);
 				System.out.println("El numero "+a+" es impar? "+valida);
-				boolean validab=funcion2.impar(b);
-				System.out.println("El numero "+b+" es impar? "+validab);
 				break;
 			}
 			case 7:{
 				boolean valida=funcion2.positivo(a);
 				System.out.println("El numero "+a+" es positivo? "+valida);
-				boolean validab=funcion2.positivo(b);
-				System.out.println("El numero "+b+" es positivo? "+validab);
 				break;
 			}
 			case 8:{
 				boolean valida=funcion2.negativo(a);
 				System.out.println("El numero "+a+" es negativo? "+valida);
-				boolean validab=funcion2.negativo(b);
-				System.out.println("El numero "+b+" es negativo? "+validab);
 				break;	
 			}
 			
