@@ -75,6 +75,10 @@ public class retos {
 				int resultado = funcion1.restar(a, b);
 				System.out.println ("La resta  entre: " + a + " - " + b + " es: " + resultado);
 			}
+			case 3: {
+				int resultado = funcion1.multiplicar(a, b);
+				System.out.println ("La multiplicación  entre: " + a + " x " + b + " es: " + resultado);
+			}
 			default:
 				break;
 			}
